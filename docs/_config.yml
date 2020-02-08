@@ -20,7 +20,7 @@ exclude:
 
 sass:
   sass_dir: _sass
-  style: :compressed
+  style: compressed
 
 # Options
 
@@ -30,7 +30,7 @@ sass:
 # Specify the author for blog posts
 author:
   name: The Phishhiker
-  url: ""
+  #url: ""
 
 # Custom vars
 #version: 3.0.0
