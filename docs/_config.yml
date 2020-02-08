@@ -4,7 +4,7 @@ description: Simple Guides to Popular Phish Venues
 url: https://phishhikersguide.com
 paginate: 3
 baseurl: ""
-permalink: pretty
+permalink: /:title
 
 # Gems
 
