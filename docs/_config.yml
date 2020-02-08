@@ -3,7 +3,7 @@ title: The Phishhiker's Guide
 description: Simple Guides to Popular Phish Venues
 url: https://phishhikersguide.com
 paginate: 3
-baseurl: ""
+baseurl: "/phishhikers"
 permalink: /:title
 
 # Gems
