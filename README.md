@@ -1,2 +1,2 @@
 # phishhikers
-made a simple jekyll site for my brother's guides
+a simple jekyll site for a friend's venue guides
