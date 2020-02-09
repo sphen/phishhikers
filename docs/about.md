@@ -4,27 +4,16 @@ title: About
 ---
 
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+ Far out in the unchartered backwaters of the unfashionable end of the Western Spiral arm of the Galaxy lies a small unregarded yellow sun. 
 </p>
 
-In the novel, *The Strange Case of Dr. Jekyll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
-
-There are currently two themes built on Poole:
-
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
+*The Phishhiker's Guide* is such a classic that it's not even neccessary to use the full title any more. We faithful refer to it as *Phishhiker's* or *The Guide*. Sometimes all it takes is a thumb gesture in a library to have the entire phish-fi section collapse in fits of forbidden giggles.
 
 Thanks for reading!
+
+
+##### For the Nerds
+
+Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/sphen/phishhikers/issues/new).
+
+

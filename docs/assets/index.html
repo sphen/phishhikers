@@ -1,0 +1,44 @@
+---
+layout: default
+title: Home
+---
+
+<!-- .post -->
+{% for post in site.posts limit:1 %}
+<article class="post">
+  <!-- .post-header -->
+  <header class="post-header">
+    <h1 class="post-title">
+      <a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark"
+        >{{post.title}}</a
+      >
+    </h1>
+  </header>
+  <!-- .post-content -->
+  <div class="post-content">
+    {% if post.content contains '<!--more-->' %} {{ post.content | split:'<!--more-->'
+    | first }}
+    <p class="read-more">
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more-link"
+        >Continue reading &rarr;</a
+      >
+    </p>
+    {% else %} {{ post.description }} {% endif %}
+  </div>
+</article>
+{% endfor %} 
+{% for post in site.posts offset:1 limit:2 %}
+<article class="post">
+  <!-- .post-header -->
+  <header class="post-header">
+    <h1 class="post-title">
+      <a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark"
+        >{{post.title}}</a
+      >
+    </h1>
+    <div class="post-content">
+      {{ post.description }}
+    </div>
+  </header>
+</article>
+{% endfor %}
