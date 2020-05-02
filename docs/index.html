@@ -3,36 +3,54 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-    <!-- post content -->
-    {{ post.content }}
-  </article>
-  {% endfor %}
+<!-- .site-intro -->
+<div class="site-intro masthead">
+  <p>
+    <em>Hi phriends</em>, 
+    <a href="https://phish.com/tours/summer-2020/">Summer Tour 2020</a> is on
+    the horizon and many of us are making plans, booking flights, reserving RVs,
+    budgeting for shows, and so on. We're putting together these guides full of
+    useful and important information to help old and new phriends alike have the
+    best and safest Summer Tour possible.
+  </p>
 </div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-  <a
-    class="pagination-item older"
-    href="{{ paginator.next_page_path | prepend: site.baseurl }}"
-    >Older</a
-  >
-  {% else %}
-  <span class="pagination-item older">Older</span>
-  {% endif %} {% if paginator.previous_page %}
-  <a
-    class="pagination-item newer"
-    href="{{ paginator.previous_page_path | prepend: site.baseurl }}"
-    >Newer</a
-  >
-  {% else %}
-  <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+<h1 class="masthead">The Guides</h1>
+<!-- .post -->
+{% for post in site.posts limit:1 %}
+<article class="post front">
+  <!-- .post-header -->
+  <a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark noopener noreferrer">
+    <div
+      class="front-header"
+      style="display: grid; grid-template-columns: 50px auto 1fr; align-items: center;"
+    >
+    <img src="assets/images/gorgelogo.png">
+      <div>
+        <h2 class="" style="margin: 0; display: flex; align-items: center;">
+          {{post.title}}
+        </h2>
+        
+      </div>
+      <div class="post-content">
+        {{ post.description }}
+      </div>
+      <!-- <button class="button" href="{{ post.url }}">View</button> -->
+    </div>
+  </a>
+ 
+</article>
+{% endfor %} {% for post in site.posts offset:1 limit:2 %}
+<article class="post">
+  <!-- .post-header -->
+  <header class="post-header">
+    <h2 class="post-title">
+      <a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark"
+        >{{post.title}}</a
+      >
+    </h2>
+    <div class="post-content">
+      {{ post.description }}
+    </div>
+  </header>
+</article>
+{% endfor %}

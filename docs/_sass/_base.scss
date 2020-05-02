@@ -68,14 +68,29 @@ a {
   text-decoration: none;
 
   // `:focus` is linked to `:hover` for basic accessibility
-  &:hover,
-  &:focus {
-    text-decoration: underline;
-  }
+  //&:hover,
+  //&:focus {
+ //   text-decoration: underline;
+  //}
 
   strong {
     color: inherit;
   }
+  
+
+}
+button:hover{
+  cursor: pointer;
+}
+
+button {
+  border: 2px solid transparent;
+  background: $cyan;
+  color: $gray-1;
+  border-radius: 5px;
+  padding: .5rem;
+  font-family: $root-font-family;
+  font-weight: 600;
 }
 
 table {

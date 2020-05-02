@@ -12,11 +12,39 @@
   }
 }
 
+.front-header {
+  border: 2px solid transparent;
+  &:hover {
+    text-decoration: none;
+    background: $gray-1;
+  }
+  &:active {
+    border: 2px dotted $blue;
+    background: #f0f4fe;
+  }
+  small {
+    font-family: $root-font-family;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.front div:not(.front-header) {
+  color: $body-color;
+  padding: .75rem 1rem;
+  &:hover{
+    color: $gray-5;
+  }
+  
+}
+
+
+
 // Blog post or page title
 .page-title,
 .post-title,
 .post-title a {
-  color: #303030;
+  color: $gray-5;
 }
 .page-title,
 .post-title {
